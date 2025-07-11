@@ -369,6 +369,9 @@ void dsi_panel_ext_bridge_put(struct dsi_panel *panel);
 void dsi_panel_calc_dsi_transfer_time(struct dsi_host_common_cfg *config,
 		struct dsi_display_mode *mode, u32 frame_threshold_us);
 
+void dsi_set_backlight_control(struct dsi_panel *panel,
+                         struct dsi_display_mode *adj_mode);
+
 #ifdef CONFIG_TARGET_PROJECT_K7T
 int dsi_panel_set_doze_status(struct dsi_panel *panel, bool status);
 
