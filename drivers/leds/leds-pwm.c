@@ -41,6 +41,7 @@ struct led_pwm_data {
 	struct pwm_device	*pwm;
 	struct pwm_setting	pwm_setting;
 	struct led_setting	led_setting;
+	struct pwm_state        pwmstate;
 	unsigned int		active_low;
 	unsigned int		period;
 	int			duty;
